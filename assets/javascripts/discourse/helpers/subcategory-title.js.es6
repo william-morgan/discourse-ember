@@ -1,6 +1,6 @@
 import { registerUnbound } from 'discourse-common/lib/helpers';
 
-registerUnbound('shorten', function(title){
+registerUnbound('subcategory-title', function(title){
   var changed_title = "DEFAULT TITLE";
   var min   = 0;
   var max   = 40;
