@@ -15,8 +15,8 @@ registerUnbound('shorten', function(title){
       changed_title = title;
     }
   }
-  changed_title = "<span>" + changed_title + "</span>";
-  return new Handlebars.SafeString(changed_title);
+  html = "<span>" + changed_title + "</span>";
+  return new Handlebars.SafeString(html);
  });
 
 
