@@ -15,3 +15,6 @@ registerUnbound('shorten',function(title) {
    return new Handlebars.SafeString("<span>" + changed_title + "</span>");
   }
 });
+
+
+
