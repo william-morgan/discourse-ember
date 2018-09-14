@@ -9,7 +9,7 @@ registerUnbound('shorten', function(title){
   }
   else{
     if(title.length > max){
-        changed_title = title.replace(/^(.{limit-3}[^\s]*).*/, "$1") + "..."; 
+        changed_title = title.substr(0, title.lastIndexOf(separator, (max-3))) + "..."; 
     }
     else{
       changed_title = title;
