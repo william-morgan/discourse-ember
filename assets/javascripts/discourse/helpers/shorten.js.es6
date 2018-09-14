@@ -1,3 +1,5 @@
+import { registerUnbound } from 'discourse-common/lib/helpers';
+
 registerUnbound('shorten',function(title) {
   var changed_title = "DEFAULT TITLE";
   var min   = 0;
@@ -15,6 +17,9 @@ registerUnbound('shorten',function(title) {
    return new Handlebars.SafeString("<span>" + changed_title + "</span>");
   }
 });
+
+
+
 
 
 
