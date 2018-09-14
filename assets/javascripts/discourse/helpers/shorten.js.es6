@@ -1,10 +1,10 @@
 import { registerUnbound } from 'discourse-common/lib/helpers';
 
-registerUnbound('shorten',function(title) {
+registerUnbound('shorten', function(title){
   var changed_title = "DEFAULT TITLE";
   var min   = 0;
   var max   = 40;
-  if(title.length > min && title.length < max && title.length==max){
+  if(title.length > min && title.length < max || title.length==max){
     changed_title = title;
   }
   else{
@@ -14,9 +14,8 @@ registerUnbound('shorten',function(title) {
     else{
       changed_title = title;
     }
-   return new Handlebars.SafeString("<span>" + changed_title + "</span>");
   }
-});
+ });
 
 
 
