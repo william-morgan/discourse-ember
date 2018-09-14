@@ -1,6 +1,6 @@
 import { registerUnbound } from 'discourse-common/lib/helpers';
 
-registerUnbound('subcategory-title', function(title){
+registerUnbound("subcategory-title", function(title){
   var changed_title = "DEFAULT TITLE";
   var min   = 0;
   var max   = 40;
@@ -18,9 +18,6 @@ registerUnbound('subcategory-title', function(title){
   html = "<span>" + changed_title + "</span>";
   return new Handlebars.SafeString(html);
  });
-
-
-
 
 
 
